@@ -163,7 +163,6 @@ a:target > img.cssbox_thumb + span.cssbox_full {
     visibility: visible;
     opacity: 1;
     pointer-events: initial;
-    width: 50%;
 }
 /* CONTACT FORM */
 input,select,textarea,button {
