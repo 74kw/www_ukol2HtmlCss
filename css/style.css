@@ -1,28 +1,29 @@
-/* Základ + texty*/
+/* Base + Fonts*/
 body {
     background-color: #222222;
 }
 
 h1 {
-    color: darkgrey;
+    color: #9B2335;
     font-size:4vw;
     text-align:center;
 }
 h2 {
-    color: darkgrey;
-    font-size:2vw;
+    color: #9B2335;
+    /*font-size:2vw;*/
     text-align:center;
 }
 p,label{
     color: whitesmoke;
+    margin: 10px;
 }
-/* NAVIGACE*/
+/* MENU*/
 .nav{
-    background-color: grey;
+    background-color: #9B2335; /*grey;*/
     overflow: hidden;
 }
 #nav {
-    background-color: grey;
+    background-color: #9B2335; /*grey;*/
     overflow: hidden;
 
     width: 25%;
@@ -39,32 +40,39 @@ p,label{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 2vw;
+    /*font-size: 2vw; */
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #nav  a:hover {
     background-color: #ddd;
-    color: black;
+    color: #9B2335;
+    border-radius: 20px;
 }
-/* PATIČKA*/
+/* FOOTER*/
 .footer  a:hover {
      background-color: #ddd;
-     color: black;
+     color: #9B2335;
  }
 .footer   {
     color: #f2f2f2;
-    font-size: 1vw;
+    /*font-size: 1vw;*/
+    text-align: center;
+    font-size: 14px;
 }
 .footer a  {
     color: #f2f2f2;
 }
 
-/* GALERIE*/
+/* GALLERY*/
 .fotky{
-    width: 25%;
+    width: 500px; /* for the size of thumbnail !!*/
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-style: double;
+    border-color: #9B2335;
 }
 .fotky:after {
     content: "";
@@ -157,8 +165,42 @@ a:target > img.cssbox_thumb + span.cssbox_full {
     pointer-events: initial;
     width: 50%;
 }
-/* This is the end of CSSBox */
-
+/* CONTACT FORM */
+input,select,textarea,button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline-color: #9B2335
+}
+#send_btn{
+    border-radius: 16px;
+    background-color: #9B2335;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+#send_btn:hover{
+    border-radius: 16px;
+    background-color: #ddd;
+    border: none;
+    color: #9B2335;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+select:active, select:hover {
+    outline-color: #9B2335
+}
 
 
 
