@@ -17,9 +17,19 @@ p,label{
     color: whitesmoke;
 }
 /* NAVIGACE*/
+.nav{
+    background-color: grey;
+    overflow: hidden;
+}
 #nav {
     background-color: grey;
     overflow: hidden;
+
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #nav a {
@@ -48,37 +58,21 @@ p,label{
 .footer a  {
     color: #f2f2f2;
 }
+
 /* GALERIE*/
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
-div.gallery {
+.fotky{
     width: 25%;
-    padding: 10px;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 .fotky:after {
     content: "";
     display: table;
     clear: both;
 }
 
-div.cssbox_thumb{
-    width: 25%;
-    padding: 10px;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 div.cssbox_thumb img {
     width: 100%;
     height: auto;
@@ -161,6 +155,7 @@ a:target > img.cssbox_thumb + span.cssbox_full {
     visibility: visible;
     opacity: 1;
     pointer-events: initial;
+    width: 50%;
 }
 /* This is the end of CSSBox */
 
